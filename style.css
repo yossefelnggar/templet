@@ -1,0 +1,190 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+.container{
+    width: 90%;
+    margin: 70px auto;
+}
+nav{
+    background-color: #ddd;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav h2{
+    font-size: 22px;
+    cursor: pointer;
+    padding: 10px;
+}
+nav h2:hover{
+    background-color: #ccc;
+}
+nav h2 span{
+    font-weight: normal;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+.nav-links a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    padding: 10px;
+}
+.nav-links a:hover{
+    background-color: #ccc;
+}
+
+
+header{
+    height: 100vh;
+    background-image: url(imgs/header.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header h2{
+    color: #fff;
+    font-size: 40px;
+}
+header h2 span{
+    background-color: #000;
+    padding: 7px 15px;
+    opacity: 0.7;
+    border-radius: 5px;
+}
+
+
+
+.houses{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.house{
+    width: 24%;
+    position: relative;
+}
+.house img{
+    width: 100%;
+}
+.house p{
+    position: absolute;
+    top: 0;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+}
+
+
+
+.about h5{
+    margin-top: 10px;
+}
+.chars {
+    margin-top: 30px;
+}
+
+.chars{
+    display: flex;
+    gap: 10px;
+}
+.char{
+    width: 24%;
+}
+.char img{
+    width: 100%;
+}
+.char h2{
+    font-weight: normal;
+}
+.char h3{
+    color: gray;
+}
+.char button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+.char button:hover {
+   background-color: #ccc;
+}
+.char > *{
+    margin-bottom: 10px;
+}
+
+.contact p {
+    margin-top: 10px;
+}
+
+.contact form{
+    margin-top: 20px;
+}
+.contact input{
+    width: 90%;
+    padding: 10px;
+    outline: none;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.contact button{
+    background-color: black;
+    padding: 10px;
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+
+.map img{
+    width: 100%;
+}
+
+/* mobile */
+
+@media screen and (max-width : 400px){
+     nav{
+         flex-direction: column;
+     }
+    .houses{
+        flex-direction: column;
+    }
+    .house {
+        width: 100%;
+    }
+    .chars{
+        flex-direction: column;
+    }
+     .char {
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width : 401px) and (max-width : 769px){
+    .house {
+            width: 49%;
+            position: relative;
+        }
+       .chars{
+        flex-wrap: wrap;
+       }
+        .char {
+            width: 49%;
+        }
+}
